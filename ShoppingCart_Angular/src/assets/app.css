@@ -1,0 +1,60 @@
+a {
+    cursor: pointer;
+}
+
+.help-block {
+    font-size: 12px;
+}
+
+
+.bg-dark{
+background-color: #333;
+color: #fff;
+}
+
+.navbar{
+border-radius: 0px;
+}
+
+.text-left{
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+
+.footer-custom{
+padding-bottom: 20px;
+}
+
+h3{
+margin-left: 12px;
+}
+
+img{
+margin-top: 13px;
+}
+
+.logo-div{
+	margin-left: 500px;
+    margin-right: 500px;
+    display:flex;
+}
+
+.right-side{
+    margin-left: 66%;
+    margin-top: 24px;
+    }
+    
+ .jumbotron{
+ padding-top: 20px;
+ }
+ 
+ .dropdown-toggle{
+ color: #fff;
+ }
+
+.firstname{
+white-space: nowrap; 
+    width: 130px; 
+    overflow: hidden;
+    text-overflow: ellipsis; }

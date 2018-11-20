@@ -1,0 +1,47 @@
+<!-- main app container -->
+  <header>
+  <div class="navbar bg-dark text-left">
+  <div style="display:flex;">
+      <img src="assets/images/hospital-logo.png" alt="Hospital" height="40" width="40">
+   <h3><strong>HospitALL</strong></h3>
+   
+   <!-- Example single danger button -->
+
+<div class="dropdown right-side" *ngIf="login">
+<div class="firstname">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                      <strong> Welcome, {{currUser}} </strong> <span class="caret"></span></a>
+                       
+                        <ul class="dropdown-menu">
+                            <li><a (click)="logout()" href="/login"><strong style="color:red;">Logout</strong></a></li>
+                           
+                        </ul>
+                        </div>
+                    </div>
+     </div>
+     
+  </div >
+  </header>
+  
+<div class="jumbotron">
+ 
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <alert></alert>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+<!-- credits -->
+<footer>
+<div class="footer-custom text-center">
+    <p>
+    
+        <a> Hospital App Version 1.0</a>
+    </p>
+    <p>
+        <a> Copyright - 2018 </a>
+    </p>
+</div>
+</footer>

@@ -1,0 +1,44 @@
+<div >
+    <div>
+    <h3>Please select a City </h3>
+    <select class="dropdown" [(ngModel)]="city">
+    <option value="" disabled hidden selected >Select City</option>
+    <option value="Bangalore">Bangalore</option>
+    <option value="Mysore">Mysore</option>
+    <option value="Mumbai">Mumbai</option>
+</select>
+<button class="btn btn-primary" (click)="search()"> Search </button>
+
+
+<div *ngIf="hospitals.length === 0">
+ <h3> No Hospitals Found</h3>
+</div>
+<div *ngIf="hospitals.length != 0">
+    <h3> List of Hospitals in <strong>{{currCity}}</strong></h3>
+
+ <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Hospital Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">City</th>
+      <th scope="col">State</th>
+      <th scope="col">PinCode</th>
+      <th scope="col">Contact No</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hospital of hospitals">
+      <th scope="row">{{hospital.id}}</th>
+      <td> {{hospital.name}}</td>
+      <td>{{hospital.address}}</td>
+      <td>{{hospital.city}}</td>
+      <td>{{hospital.state}}</td>
+      <td>{{hospital.pincode}}</td>
+      <td>{{hospital.contactno}}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>

@@ -1,0 +1,15 @@
+.table .thead-dark{
+color: #fafafa;
+    background-color: #212529;
+    border-color: #32383e;
+    }
+  
+  .dropdown  
+    {
+        width: 40%;
+    margin-bottom: 12px;
+    }
+
+.btn-primary{
+margin-left: 10px;
+}
